@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './components/landing/landing.component';
 import { ProductsComponent } from './components/products/products.component';
+import { PanelgornyComponent } from './components/panelgorny/panelgorny.component';
 
 const appRoutes: Routes = [
   { path: 'products', component: ProductsComponent },
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     LandingComponent,
-    ProductsComponent
+    ProductsComponent,
+    PanelgornyComponent
   ],
   imports: [
     BrowserModule,
