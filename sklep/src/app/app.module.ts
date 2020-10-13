@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './components/landing/landing.component';
 import { ProductsComponent } from './components/products/products.component';
 import { PanelgornyComponent } from './components/panelgorny/panelgorny.component';
+import { KontaktComponent } from './components/kontakt/kontakt.component';
 
 const appRoutes: Routes = [
   { path: 'products', component: ProductsComponent },
@@ -20,7 +21,8 @@ const appRoutes: Routes = [
     AppComponent,
     LandingComponent,
     ProductsComponent,
-    PanelgornyComponent
+    PanelgornyComponent,
+    KontaktComponent
   ],
   imports: [
     BrowserModule,
