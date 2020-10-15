@@ -1,3 +1,43 @@
 <app-panelgorny></app-panelgorny>
-<p>##TBD## Produkty</p>
+<style>
+  .products{
+    width: 80%;
+  }
+  .prodTab{
+    margin: 0 auto;
+  }
+  .prodCont{
+    background-color: blanchedalmond;
+  }
+</style>
+<div class="products">
+  <table class="prodTab">
+    <thead>
+      <tr>
+        <th>
+          Podgląd
+        </th>
+        <th>
+          opis
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let a of [1,2,3,4,5]">
+        <tr class="prodCont">
+          <td>#obrazek#</td>
+          <td>
+            <li>Nazwa: Nazwa</li>
+            <li>Cena: Cena</li>
+            <li>Kategoria: Kategoria</li>
+          </td>
+          <td>
+            <button>Szczegóły</button>
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>
+
 <button routerLink="/landing">Powrót na stronę główną</button>

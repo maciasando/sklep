@@ -9,7 +9,7 @@ import { LandingComponent } from './components/landing/landing.component';
 import { ProductsComponent } from './components/products/products.component';
 import { PanelgornyComponent } from './components/panelgorny/panelgorny.component';
 import { KontaktComponent } from './components/kontakt/kontakt.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   { path: 'products', component: ProductsComponent },
@@ -29,7 +29,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
