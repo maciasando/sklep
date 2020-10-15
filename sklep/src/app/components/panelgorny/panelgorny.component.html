@@ -1,36 +1,26 @@
 <style>
-  .topDiv
+  .panel
   {
     border:2px outset red;
-    border-radius: 2%;
     background-color: crimson;
     display: flex;
+    font-size: x-large;
   }
-  .siteTitle
+  .links
   {
+    border: 1px outset crimson;
+    margin: 0px 10px 0px 10px;
     text-align: center;
-    width: 20%;
-    float: left;
   }
-  .prodLink
+  .links:hover
   {
-    display: flex;
+    cursor: pointer;
+    background-color:  rgb(255, 115, 115);
   }
-  .insideDiv
-  {
-    display:flex;
-  }
+
 </style>
-
-<div>
-  <div class="topDiv">
-    <h2 class="siteTitle">Sklep</h2>
-
-
-      <p routerLink="/products" class="prodLink">Produkty</p>
-      <p routerLink="/kontakt" class="prodLink">Kontakt</p>
-
-
-    <input type="text"><button routerLink="/products">Szukaj</button>
-  </div>
+<div class="panel">
+  <p routerLink="/landing" class="links">Sklep</p>
+    <p routerLink="/products" class="links">Produkty</p>
+    <p routerLink="/kontakt" class="links">Kontakt</p>
 </div>

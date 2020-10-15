@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+
 import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './components/landing/landing.component';
 import { ProductsComponent } from './components/products/products.component';
@@ -13,6 +14,7 @@ import { KontaktComponent } from './components/kontakt/kontakt.component';
 const appRoutes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'landing', component: LandingComponent },
+  { path: 'kontakt', component: KontaktComponent },
   { path: '', redirectTo: '/landing', pathMatch: 'full' }
  ];
 
