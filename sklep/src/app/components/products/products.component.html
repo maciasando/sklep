@@ -5,6 +5,7 @@
   }
   .prodTab{
     margin: 0 auto;
+    width: 80%;
   }
   .prodCont{
     background-color: blanchedalmond;
@@ -18,12 +19,15 @@
           Podgląd
         </th>
         <th>
-          opis
+          Opis
+        </th>
+        <th>
+          Szczegóły
         </th>
       </tr>
     </thead>
     <tbody>
-      <ng-container *ngFor="let a of [1,2,3,4,5]">
+      <ng-container *ngFor="let a of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]">
         <tr class="prodCont">
           <td>#obrazek#</td>
           <td>
@@ -35,9 +39,8 @@
             <button>Szczegóły</button>
           </td>
         </tr>
+
       </ng-container>
     </tbody>
   </table>
 </div>
-
-<button routerLink="/landing">Powrót na stronę główną</button>
